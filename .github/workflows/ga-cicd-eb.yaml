@@ -67,7 +67,7 @@ jobs:
 
       - name: Init Elastic Beanstalk
         run: |
-          echo n | eb init -p docker --region ${{ env.AWS_REGION }} --source codecommit
+          echo n | eb init -p docker --region ${{ env.AWS_REGION }}
 
       - name: Deploy to Elastic Beanstalk
         run: |
